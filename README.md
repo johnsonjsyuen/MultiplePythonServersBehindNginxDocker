@@ -9,4 +9,7 @@ We use supervisord to ensure all parts start and restart correctly.
 ```docker run -d -it -p 8000:8000 --name=nginxtest testnginxproxy```
 
 ## To remove:
-```docker rm nginxtest```
+```
+docker stop nginxtest
+docker rm nginxtest
+```
